@@ -20,9 +20,11 @@ else
 fi
 cd "$DEFAULTDIR"
 
-wget -q https://raw.githubusercontent.com/racecarj/racecar/RacecarJTransitory/racecar.rosinstall -O "$DEFAULTDIR"/.rosinstall
+#wget -q https://raw.githubusercontent.com/racecarj/racecar/RacecarJTransitory/racecar.rosinstall -O "$DEFAULTDIR"/.rosinstall
 
-wstool update
+git clone https://github.com/gt-racecar/gt-racecar-software.git /racecar-ws/gt-racecar-software
+
+#wstool update
 
 # Install prerequisite packages
 echo "Installing prerequisites"
