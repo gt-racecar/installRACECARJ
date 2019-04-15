@@ -22,7 +22,7 @@ cd "$DEFAULTDIR"
 
 #wget -q https://raw.githubusercontent.com/racecarj/racecar/RacecarJTransitory/racecar.rosinstall -O "$DEFAULTDIR"/.rosinstall
 
-git clone https://github.com/gt-racecar/gt-racecar-software.git /racecar-ws/gt-racecar-software
+git clone https://github.com/gt-racecar/gt-racecar-software.git ${HOME}/racecar-ws/gt-racecar-software
 
 #wstool update
 
