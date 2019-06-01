@@ -20,11 +20,12 @@ else
 fi
 cd "$DEFAULTDIR"
 
-#wget -q https://raw.githubusercontent.com/racecarj/racecar/RacecarJTransitory/racecar.rosinstall -O "$DEFAULTDIR"/.rosinstall
+git clone https://github.com/gt-racecar/racecar.git ${HOME}/racecar-ws/racecar
+git clone https://github.com/gt-racecar/racecar_gazebo.git ${HOME}/racecar-ws/racecar_gazebo
+git clone https://github.com/gt-racecar/vesc.git ${HOME}/racecar-ws/vesc
+git clone https://github.com/gt-racecar/razor_imu_m0_driver.git ${HOME}/racecar-ws/razor_imu_m0_driver
+git clone --branch v2.2.x https://github.com/stereolabs/zed-ros-wrapper.git ${HOME}/racecar-ws/zed-ros-wrapper
 
-git clone https://github.com/gt-racecar/gt-racecar-software.git ${HOME}/racecar-ws/gt-racecar-software
-
-#wstool update
 
 # Install prerequisite packages
 echo "Installing prerequisites"
